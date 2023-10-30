@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0b0b0;
+    text-align: center;
+}
+
+#calculator {
+    width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #b0b0b0, #e0e0e0);
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 10px;
+}
+
+#screen {
+    height: 60px;
+    text-align: right;
+    padding: 5px;
+    font-size: 28px;
+    background-color: #d0d0d0;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 16.66%;
+    height: 60px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #90EE90, #32CD32); /* Green gradient */
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #8CBF88, #2E8B57); /* Darker green gradient on hover */
+    transform: scale(1.05);
+}
+
+#equals {
+    background-color: #FFFF00; /* Yellow for the "=" button */
+    color: black;
+}
+
+#erase {
+    background-color: #FF0000;
+    color: white;
+}
